@@ -1,0 +1,179 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import 'partials/variables';
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body{
+	position: relative;
+  	margin: 0;
+  	padding-bottom: 6rem;
+  	min-height: 100%;
+	font-family: "Century Gothic", Verdana, Arial, "Arial Narrow", Helvetica, sans-serif;
+}
+
+textarea{
+	resize: none;
+}
+
+#permission_info_modal{
+	li{
+		color: #008AFF;
+	}
+	.forbid{
+		color: red;
+	}
+}
+
+
+.container{
+	position: relative;
+}
+
+.table-container{
+	margin-top: 10px;
+}
+
+.flash-message{
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+}
+
+.btn{
+	border-radius: 0;
+}
+
+.login-form{
+	margin-top: 100px;
+	padding: 0 40px;
+	color: black;
+	
+	.login-header{
+		-webkit-transform: skewX(-10deg);
+		-moz-transform: skewX(-10deg);
+	    -o-transform: skewX(-10deg);
+		transform: skewX(-10deg);
+		margin: 0;
+		margin-bottom: 10px;
+		padding: 10px;
+	}
+}
+
+#back_to_top{
+	position: fixed;
+	right: 10px;
+	cursor: pointer;
+	background-color: rgba($dark-gray, .2);
+	color: $yellow;
+	border-radius: 100%;
+	padding: 15px;
+	bottom: 60px;
+	display: none;
+}
+
+.accordion{
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background-color: $dark-gray;
+	border-radius: 5px;
+	-webkit-border-top-right-radius: 0px;
+	        border-top-right-radius: 0px;
+	-webkit-border-top-left-radius: 0px;
+	        border-top-left-radius: 0px;
+	
+	.user-thumbnail{
+		img{
+			width: 150px;
+			height: 150px;
+			object-fit: contain;
+		}
+	}
+
+	a{
+		color: white;
+		&:hover, &:active, &:focus{
+			color: $dark-gray;
+		}
+	}
+
+	.nav-pills{
+		li{
+			a{
+				border-radius: 0px;
+			}
+		}
+	}
+
+	.user-info{
+		border-bottom: 1px solid $yellow;
+		ul > li:first-child{
+			padding-top: 15px;
+			color: $yellow;
+			cursor: pointer;
+		}
+	}
+}
+
+.navbar{
+	margin-bottom: 0px;
+	.navbar-brand{
+		color: $yellow;
+		&:hover{
+			color: $yellow;
+		}
+	}
+}
+
+.info-row{
+	margin-bottom: 20px;
+	
+	.btn{
+		background-color: $dark-gray;
+		color: $yellow;
+		border: 0;
+		
+		&:hover{
+			background-color: darken($dark-gray, 2%);
+		}
+	}
+}
+
+.pager{
+	padding: 10px 0 0 0;
+	border-top: 1px solid rgba($dark-gray, .2);
+}
+
+.footer{
+	color: $yellow;
+	background-color: darken($dark-gray, 15%);
+	padding: 5px 0;
+	line-height: 20px;
+	
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+//*********************
+//Start Large desktops and laptop lumen Styles
+//*********************
+@media (min-width: 1200px) {
+  
+}
+//*********************
+//End Large desktops and laptop lumen Styles
+//*********************
+
+//*********************
+//Start Landscape tablets and medium desktops lumen Styles
+//*********************
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+//*********************
+//End Landscape tablets and medium desktops lumen Styles
+//*********************
